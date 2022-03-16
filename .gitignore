@@ -22,7 +22,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-cmd
-notes
+cmd.txt
+notes.txt
 /data
 /public/img
