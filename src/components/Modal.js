@@ -1,4 +1,4 @@
-import { useGlobalContext } from '../Context';
+import { useGlobalContext } from '../hooks/Context';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 

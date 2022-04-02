@@ -1,19 +1,94 @@
 {
-  "posts": [
+  "storeProducts": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "title": "Album Covered Tshirt",
+      "img": "/img/albumcovertshirt.jpg",
+      "price": 23.08,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "title": "No clue jersey",
+      "img": "/img/nocluetshirt.png",
+      "price": 18.34,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 3,
+      "title": "Outerspace tee",
+      "img": "/img/outerspace.jpg",
+      "price": 16.17,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 4,
+      "title": "Valentines hoodie",
+      "img": "/img/jumpers.jpg",
+      "price": 36.52,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 5,
+      "title": "koozy swimsuit",
+      "img": "/img/jumpsuits.jpg",
+      "price": 24.08,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 6,
+      "title": "koozy underwear",
+      "img": "/img/underwear.jpg",
+      "price": 1.01,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 7,
+      "title": "gigin short",
+      "img": "/img/short.jpg",
+      "price": 18.34,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 8,
+      "title": "space drop pico de pino collab hoodie",
+      "img": "/img/spacedrop.jpg",
+      "price": 35.34,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
+    },
+    {
+      "id": 10,
+      "title": "Designer flex",
+      "img": "/img/designer_flex.png",
+      "price": 35.34,
+      "info": "",
+      "inCart": false,
+      "count": 0,
+      "total": 0
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

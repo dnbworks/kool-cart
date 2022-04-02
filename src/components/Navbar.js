@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../koollogo.svg';
-import { useGlobalContext } from '../Context';
+import logo from '../assets/img/koollogo.svg';
+import { useGlobalContext } from '../hooks/Context';
 
 const Icon = styled.span`
   font-size: 18px;

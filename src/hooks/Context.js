@@ -25,7 +25,7 @@ const initialState = {
     cartSubTotal: 0,
     cartTax: 0,
     cartTotal: 0
-  }
+}
 
 const AppProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, initialState)
@@ -45,29 +45,40 @@ const AppProvider = ({ children }) => {
     const clearCart = () => {
       dispatch({ type: 'CLEAR_CART' })
     }
+
     const remove = (id) => {
       dispatch({ type: 'REMOVE', payload: id })
     }
+
     const increase = (id) => {
       dispatch({ type: 'INCREASE', payload: id })
     }
+
     const decrease = (id) => {
       dispatch({ type: 'DECREASE', payload: id })
     }
+
     const fetchData = async () => {
       dispatch({ type: 'LOADING' })
-      const response = await fetch(url)
-      const cart = await response.json()
-      dispatch({ type: 'DISPLAY_ITEMS', payload: cart })
+      try{
+        const response = await fetch(url)
+        const cart = await response.json()
+        dispatch({ type: 'DISPLAY_ITEMS', payload: cart });
+      } catch(err){
+        throw new Error(err);
+      }
     }
+
     const toggleAmount = (id, type) => {
       dispatch({ type: 'TOGGLE_AMOUNT', payload: { id, type } })
     }
+
     const add_to_cart = (event, product) => {
       event.preventDefault();
       const item = getItem(product.id);
       dispatch({ type: 'ADD_TO_CART', payload: { ...product, item } });
     }
+    
     useEffect(() => {
       fetchData()
     }, [])

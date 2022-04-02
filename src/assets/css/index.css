@@ -226,21 +226,20 @@ nav .cart .digit {
 }
 
 .media--image {
-  width: 100%;
-  height: 150px;
+  width: 240px;
+  height: 240px;
   position:relative;
   overflow: hidden;
 }
 
-@media (min-width: 576px){
-  .item {
-    width:240px;
-  }
+@media (max-width: 576px){
   .media--image {
-    width:100%;
-    height: 240px;
+    width: 100%;
+    height: 160px;
   }
+  
 }
+
 
 .media--image img.media__image {
   width: 100%;
@@ -249,11 +248,27 @@ nav .cart .digit {
   object-fit: contain;
 }
 
+@media (min-width: 576px){
+  .item {
+    width:240px;
+  }
+
+  .media--image {
+    width:100%;
+    height: 260px;
+  }
+}
+
+
 .price {
   color: #979797;
-  font-size: 20px;
   font-family: sans-serif !important;
-  font-weight: bolder;
+  text-align: center;
+}
+
+a.product_title {
+  text-align: center;
+  display: block;
 }
 
 figure {

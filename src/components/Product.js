@@ -10,7 +10,7 @@ const Product = ({id, title, img, price, inCart}) => {
             <img src={img} alt={title} />
           </Link>
         </div>
-        <Link to={`/product/${id}`}>{title}</Link>
+        <Link to={`/product/${id}`} className="product_title">{title}</Link>
         <p className='price'>${price}</p>
     </div>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './assets/css/index.css';
 import App from './App';
-import './fontawesome';
+import './assets/js/fontawesome';
 import './assets/css/bootstrap-grid.css'
 import { BrowserRouter as Router } from 'react-router-dom';
-import { AppProvider } from './Context'
+import { AppProvider } from './hooks/Context'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +19,3 @@ ReactDOM.render(
 );
 
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
