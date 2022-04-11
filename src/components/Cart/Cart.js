@@ -1,6 +1,7 @@
 import EmptyCart from './EmptyCart';
-import { useGlobalContext } from '../../Context';
+import { useGlobalContext } from '../../hooks/Context';
 import CartList from './CartList';
+import CartTotal from './CartTotal';
 
 const Cart = () => {
   const state = useGlobalContext();
@@ -14,9 +15,8 @@ const Cart = () => {
             <CartList state={state} />
           </div>
           <div className="col-12 col-md-4 col-lg-4">
-            <span><strong>SubTotal:</strong> ${total}</span>
-            <p>Taxes and shipping calculated at checkout</p>
-            <a href="">Check out</a>
+            <CartTotal state={state} />
+           
           </div>
         </div>
       </div>

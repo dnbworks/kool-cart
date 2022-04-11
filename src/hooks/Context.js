@@ -17,13 +17,12 @@ const getLocalStorage = () => {
 const initialState = {
     loading: false,
     cart: getLocalStorage(),
-    total: 0,
     amount: 0,
     storeProducts: [],
     isModalOpen: false,
     modalProduct: null,
     cartSubTotal: 0,
-    cartTax: 0,
+    cartTax: 0.1,
     cartTotal: 0
 }
 

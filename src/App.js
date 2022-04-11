@@ -2,7 +2,7 @@ import { Route, Switch } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import ProductList from './views/ProductList';
 import Details from './views/Details';
-// import Cart from './components/Cart';
+import Cart from './components/Cart';
 import Default from './views/Default';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
@@ -17,9 +17,9 @@ function App() {
         <Route path="/product/:id">
           <Details/>
         </Route>
-        {/* <Route path="/cart">
+        <Route path="/cart">
           <Cart/>
-        </Route> */}
+        </Route>
         <Route path="*">
           <Default/>
         </Route>
