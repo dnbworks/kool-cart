@@ -55,18 +55,21 @@ const reducer = (state, action) => {
     let { cartSubTotal, amount } = state.cart.reduce(
       (cartTotal, cartItem) => {
         const { total, count } = cartItem
-        cartTotal.total += parseFloat(total)
+        cartTotal.cartSubTotal += parseFloat(total)
         cartTotal.amount += count
         return cartTotal
       },
       {
-        total: 0,
+        cartSubTotal: 0,
         amount: 0,
       }
     )
-    cartSubTotal = parseFloat(cartSubTotal.toFixed(2))
+    cartSubTotal = parseFloat(cartSubTotal).toFixed(2);
+    const cartTax = parseFloat(cartSubTotal * 0.1).toFixed(2);
+    const cartTotal = (parseFloat(cartSubTotal) + parseFloat(cartTax)).toFixed(2);
+    console.log(typeof(cartSubTotal));
 
-    return { ...state, cartSubTotal, amount }
+    return { ...state, cartSubTotal, cartTax, cartTotal, amount }
   }
   if (action.type === 'LOADING') {
     return { ...state, loading: true }

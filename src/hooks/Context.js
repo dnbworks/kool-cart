@@ -22,7 +22,7 @@ const initialState = {
     isModalOpen: false,
     modalProduct: null,
     cartSubTotal: 0,
-    cartTax: 0.1,
+    cartTax: 0,
     cartTotal: 0
 }
 
