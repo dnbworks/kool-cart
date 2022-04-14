@@ -2,6 +2,9 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from '../assets/img/koollogo.svg';
 import { useGlobalContext } from '../hooks/Context';
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaBars } from "react-icons/fa";
+
 
 const Icon = styled.span`
   font-size: 18px;
@@ -31,7 +34,7 @@ const Navbar = () => {
         {/* Listen Music */}
         {/* <span><i class="fas fa-music" ></i></span> */}
         <Icon>
-          <i className="fas fa-bars" ></i>
+          <FaBars size={28}/>
         </Icon>
       </Link>
       <Link to="/">
@@ -42,7 +45,7 @@ const Navbar = () => {
       </div> */}
       <Link to="/cart" className='cart'>
         <Icon>
-          <i className="fas fa-shopping-basket" ></i>
+          <AiOutlineShoppingCart size={28} />
         </Icon>
         <Digit>{amount}</Digit>
       </Link>

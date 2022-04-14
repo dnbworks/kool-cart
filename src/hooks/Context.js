@@ -34,6 +34,7 @@ const AppProvider = ({ children }) => {
       return product;
     }
 
+
     const openModal = id => {
       dispatch({ type: 'OPEN_MODAL', payload: getItem(id) })
     };
